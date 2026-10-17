@@ -15,11 +15,8 @@ In Jamf Deployer, the Building Blocks library offers this catalog on first visit
 | Software Updates | Declarative update settings via a Jamf Blueprint |
 | Compliance — CIS Level 1 | CIS Level 1 benchmark, starting in monitor mode |
 | Rosetta 2 | Rosetta 2 install script and check-in policy |
-| App Catalog | Jamf App Catalog apps, picked in the app |
-| Jamf Protect Baseline | Report-only endpoint-security starting point |
-| Security Cloud | UEM Connect and a Mac activation profile |
 
-The **Foundation** block (categories, device groups, extension attributes) ships inside the app itself — every baseline depends on it.
+These blocks carry configuration opinions, which is exactly why they live in a catalog: your organization's FileVault or update policy should come from **your** catalog, not from an app. The connector-style blocks that carry no configuration of their own — **Foundation**, **App Catalog**, **Jamf Protect Baseline** and **Security Cloud** — ship inside the app.
 
 ## Presets
 
