@@ -1,10 +1,10 @@
-# Jamf Deployer Catalog
+# Jamf Deployer Demo Catalog
 
-The official building-block catalog for [Jamf Deployer](https://github.com/JordyThery/jamf-deployer): best-practice baselines for Jamf tenants, versioned by release tag.
+A demo building-block catalog for [Jamf Deployer](https://github.com/JordyThery/jamf-deployer): a worked example of a best-practice baseline, versioned by release tag. Use it to evaluate the app and as the reference for **publishing a catalog of your own** — for real fleets, your own catalog (private or public) is the intended setup.
 
 ## Using it
 
-In Jamf Deployer, open **Building Blocks → Add Git Catalog…** and enter this repository's URL. The app pins each tenant to a release tag, so a published update never changes a tenant until you opt in (**Baseline Updates…** on the tenant).
+In Jamf Deployer, the Building Blocks library offers this catalog on first visit, or add any catalog repository via **Add Git Catalog…**. The app pins each tenant to a release tag, so a published update never changes a tenant until you opt in (**Baseline Updates…** on the tenant).
 
 ## Blocks
 
@@ -26,9 +26,9 @@ The **Foundation** block (categories, device groups, extension attributes) ships
 - **Standard** — enrollment, FileVault, software updates, CIS Level 1 (monitor), Rosetta 2
 - **Minimal** — foundation and software updates
 
-## Format
+## Publishing your own catalog
 
-Each block is a folder with a `block.json` manifest and the OpenTofu module that implements it. See [Building Blocks](https://github.com/JordyThery/jamf-deployer/blob/main/docs/building-blocks.md) for the format and how to publish a catalog of your own.
+A catalog is a repository with `catalog.json` at the root, one folder per block under `blocks/` (a `block.json` manifest plus the OpenTofu module), optional `presets/`, and release tags. Fork or copy this repository, replace the blocks with yours, tag a release, and add it in the app. Capturing objects from a tenant in Jamf Deployer produces blocks in exactly this format. See [Building Blocks](https://github.com/JordyThery/jamf-deployer/blob/main/docs/building-blocks.md).
 
 ## License
 
