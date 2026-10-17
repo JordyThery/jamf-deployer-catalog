@@ -1,0 +1,35 @@
+{
+  "id": "checkin-inventory",
+  "name": "Check-in & Inventory",
+  "summary": "How often Macs check in, whether startup and login run policies, and what inventory each Mac reports.",
+  "category": "Tenant Settings",
+  "version": "1.0.0",
+  "requires": [],
+  "conflicts": [],
+  "products": ["jamf-pro"],
+  "minJamfProVersion": "11.31.0",
+  "permissions": [
+    "computer-check-in:read",
+    "computer-check-in:update",
+    "computer-inventory-collection-settings:read",
+    "computer-inventory-collection-settings:update"
+  ],
+  "risk": "low",
+  "alwaysOn": false,
+  "scope": { "kind": "none" },
+  "settings": [
+    { "key": "check_in_frequency", "title": "Check-in every", "type": "enum", "default": "15",
+      "enumValues": ["5", "15", "30", "60"], "enumLabels": ["5 minutes", "15 minutes", "30 minutes", "60 minutes"],
+      "description": "How often Macs contact Jamf Pro for policies and commands. 15 minutes balances responsiveness and load.", "section": "Check-in" },
+    { "key": "run_startup_policies", "title": "Run policies at startup", "type": "bool", "default": "true",
+      "description": "Installs the startup script so policies with the Startup trigger run.", "section": "Check-in" },
+    { "key": "run_login_policies", "title": "Run policies at login", "type": "bool", "default": "true",
+      "description": "Installs the login hook so policies with the Login trigger run.", "section": "Check-in" },
+    { "key": "collect_application_usage", "title": "Collect application usage", "type": "bool", "default": "true",
+      "description": "Reports how long each app is in the foreground.", "section": "Inventory" },
+    { "key": "include_home_directory_sizes", "title": "Include home folder sizes", "type": "bool", "default": "false",
+      "description": "Reports the size of each user's home folder. Slows inventory on Macs with large home folders.", "section": "Inventory" }
+  ],
+  "objectsCreated": ["Computer check-in settings", "Computer inventory collection settings"],
+  "acceptsCategory": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "complete",
+  "name": "Complete",
+  "summary": "Everything in this catalog: the Standard baseline plus tenant settings, Self Service maintenance and macOS version groups.",
+  "blocks": ["foundation", "enrollment", "filevault", "software-updates", "compliance-cis-l1", "rosetta", "checkin-inventory", "reenrollment", "local-admin-password", "self-service-app", "self-service-maintenance", "macos-version-groups"],
+  "defaults": {
+    "compliance-cis-l1": { "enforcement_mode": "MONITOR" }
+  }
+}

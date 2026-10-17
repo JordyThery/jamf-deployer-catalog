@@ -1,0 +1,27 @@
+{
+  "id": "local-admin-password",
+  "name": "Local Admin Password Rotation",
+  "summary": "Rotates the passwords of Jamf-managed local administrator accounts on a schedule and after each viewing.",
+  "category": "Security",
+  "version": "1.0.0",
+  "requires": [],
+  "conflicts": [],
+  "products": ["jamf-pro"],
+  "minJamfProVersion": "11.31.0",
+  "permissions": ["local-admin-passwords:read", "local-admin-passwords:update"],
+  "risk": "medium",
+  "alwaysOn": false,
+  "scope": { "kind": "none" },
+  "settings": [
+    { "key": "rotation_interval", "title": "Rotate every", "type": "enum", "default": "30 days",
+      "enumValues": ["Never", "7 days", "30 days", "60 days", "180 days"],
+      "description": "How often managed local admin passwords rotate automatically.", "section": "Rotation" },
+    { "key": "rotation_after_viewing_interval", "title": "Rotate after viewing", "type": "enum", "default": "1 hour",
+      "enumValues": ["1 hour", "3 hours", "12 hours", "1 day", "3 days", "7 days"],
+      "description": "How long after someone views a password in Jamf Pro it is rotated.", "section": "Rotation" },
+    { "key": "include_prestage_accounts", "title": "Include PreStage admin accounts", "type": "bool", "default": "true",
+      "description": "Also rotates the local admin account a PreStage enrollment creates.", "section": "Rotation" }
+  ],
+  "objectsCreated": ["Local administrator password settings"],
+  "acceptsCategory": false
+}

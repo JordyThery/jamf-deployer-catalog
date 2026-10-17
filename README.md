@@ -15,6 +15,14 @@ In Jamf Deployer, the Building Blocks library offers this catalog on first visit
 | Software Updates | Declarative update settings via a Jamf Blueprint |
 | Compliance — CIS Level 1 | CIS Level 1 benchmark, starting in monitor mode |
 | Rosetta 2 | Rosetta 2 install script and check-in policy |
+| Check-in & Inventory | Check-in frequency, startup and login policies, inventory collection |
+| Re-enrollment | What Jamf Pro clears when a Mac enrolls again |
+| Local Admin Password Rotation | Scheduled rotation, and rotation after a password is viewed |
+| Self Service App | Installs Self Service everywhere; landing page and notifications |
+| Self Service Maintenance | "Update inventory" and "Flush DNS cache" Self Service items |
+| macOS Version Groups | Smart groups for Macs on current macOS and Macs below your minimum |
+
+The four settings blocks (check-in, re-enrollment, local admin passwords, Self Service app) set tenant-wide settings. A setting can belong to one block only, and removing such a block keeps the current values in Jamf.
 
 These blocks carry configuration opinions, which is exactly why they live in a catalog: your organization's FileVault or update policy should come from **your** catalog, not from an app. The connector-style blocks that carry no configuration of their own — **Foundation**, **App Catalog**, **Jamf Protect Baseline** and **Security Cloud** — ship inside the app.
 
@@ -22,6 +30,7 @@ These blocks carry configuration opinions, which is exactly why they live in a c
 
 - **Standard** — enrollment, FileVault, software updates, CIS Level 1 (monitor), Rosetta 2
 - **Minimal** — foundation and software updates
+- **Complete** — everything above
 
 ## Publishing your own catalog
 

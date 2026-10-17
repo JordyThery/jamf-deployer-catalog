@@ -58,14 +58,40 @@ module "rosetta" {
   category_id             = module.foundation.category_applications_id
 }
 
-module "app_catalog" {
-  source                  = "../blocks/app-catalog"
-  name_prefix             = "JD - "
-  managed_by_tag          = "Managed by Jamf Deployer · app-catalog@1.0.0"
-  scope_jamf_pro_group_id = module.foundation.all_macs_jamf_pro_id
-  category_id             = module.foundation.category_applications_id
-  apps_json               = "[{\"titleName\":\"Google Chrome\",\"publisher\":\"Google\",\"deploymentType\":\"SELF_SERVICE\",\"updateBehavior\":\"AUTOMATIC\"}]"
+module "checkin_inventory" {
+  source         = "../blocks/checkin-inventory"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · checkin-inventory@1.0.0"
 }
 
+module "reenrollment" {
+  source         = "../blocks/reenrollment"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · reenrollment@1.0.0"
+}
 
+module "local_admin_password" {
+  source         = "../blocks/local-admin-password"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · local-admin-password@1.0.0"
+}
 
+module "self_service_app" {
+  source         = "../blocks/self-service-app"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · self-service-app@1.0.0"
+}
+
+module "macos_version_groups" {
+  source         = "../blocks/macos-version-groups"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · macos-version-groups@1.0.0"
+}
+
+module "self_service_maintenance" {
+  source                  = "../blocks/self-service-maintenance"
+  name_prefix             = "JD - "
+  managed_by_tag          = "Managed by Jamf Deployer · self-service-maintenance@1.0.0"
+  scope_jamf_pro_group_id = module.foundation.all_macs_jamf_pro_id
+  category_id             = module.foundation.category_maintenance_id
+}

@@ -1,0 +1,18 @@
+{
+  "id": "self-service-maintenance",
+  "name": "Self Service Maintenance",
+  "summary": "Self Service items users can run themselves when support asks: update inventory and flush the DNS cache.",
+  "category": "Maintenance",
+  "version": "1.0.0",
+  "requires": ["foundation"],
+  "conflicts": [],
+  "products": ["jamf-pro"],
+  "minJamfProVersion": "11.31.0",
+  "permissions": ["scripts:create", "scripts:read", "scripts:update", "scripts:delete", "policies:create", "policies:read", "policies:update", "policies:delete"],
+  "risk": "low",
+  "alwaysOn": false,
+  "scope": { "kind": "jamfProGroup", "variable": "scope_jamf_pro_group_id", "default": "all_macs" },
+  "settings": [],
+  "objectsCreated": ["1 script", "2 Self Service policies"],
+  "acceptsCategory": true
+}

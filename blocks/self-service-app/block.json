@@ -1,0 +1,26 @@
+{
+  "id": "self-service-app",
+  "name": "Self Service App",
+  "summary": "Installs the Self Service app on every Mac and sets how it opens and notifies users.",
+  "category": "Tenant Settings",
+  "version": "1.0.0",
+  "requires": [],
+  "conflicts": [],
+  "products": ["jamf-pro"],
+  "minJamfProVersion": "11.31.0",
+  "permissions": ["self-service:read", "self-service:update"],
+  "risk": "low",
+  "alwaysOn": false,
+  "scope": { "kind": "none" },
+  "settings": [
+    { "key": "install_automatically", "title": "Install Self Service automatically", "type": "bool", "default": "true",
+      "description": "Installs the Self Service app in /Applications on every managed Mac.", "section": "Self Service" },
+    { "key": "default_landing_page", "title": "Opens on", "type": "enum", "default": "HOME",
+      "enumValues": ["HOME", "BROWSE", "HISTORY", "NOTIFICATIONS"], "enumLabels": ["Home", "Browse", "History", "Notifications"],
+      "description": "The page users see when Self Service opens.", "section": "Self Service" },
+    { "key": "notifications_enabled", "title": "Show notifications", "type": "bool", "default": "true",
+      "description": "Notifies users about new items available in Self Service.", "section": "Self Service" }
+  ],
+  "objectsCreated": ["Self Service settings for macOS"],
+  "acceptsCategory": false
+}
