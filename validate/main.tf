@@ -67,17 +67,5 @@ module "app_catalog" {
   apps_json               = "[{\"titleName\":\"Google Chrome\",\"publisher\":\"Google\",\"deploymentType\":\"SELF_SERVICE\",\"updateBehavior\":\"AUTOMATIC\"}]"
 }
 
-provider "jamfprotect" {
-}
 
-module "protect_baseline" {
-  source         = "../blocks/protect-baseline"
-  name_prefix    = "JD - "
-  managed_by_tag = "Managed by Jamf Deployer · protect-baseline@1.0.0"
-}
 
-module "security_cloud" {
-  source         = "../blocks/security-cloud"
-  name_prefix    = "JD - "
-  managed_by_tag = "Managed by Jamf Deployer · security-cloud@1.1.0"
-}
