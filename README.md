@@ -31,7 +31,7 @@ These blocks carry configuration opinions, which is exactly why they live in a c
 
 ## How blocks connect
 
-Every block is optional. A block that applies to a group or files objects under a category lets you pick, per tenant, either a group or category that already exists in Jamf, or one created by another selected block. **Device Groups** and **Categories** create the usual ones, and the other blocks here default to them when both are selected — FileVault to Pilot and Security, Rosetta 2 to Apple Silicon Macs and Applications. In a block's `block.json`, a default reads `"device-groups/Pilot"`: the providing block's ID and the object's name from its `provides` list.
+Every block is optional. A block that applies to a group or files objects under a category lets you pick, per tenant, one created by another selected block or, for Jamf Pro groups and categories, one that already exists in Jamf. Platform-scoped blocks (Software Updates, CIS Level 1) use a group another selected block creates. **Device Groups** and **Categories** create the usual ones, and the other blocks here default to them when both are selected — FileVault to Pilot and Security, Rosetta 2 to Apple Silicon Macs and Applications. In a block's `block.json`, a default reads `"device-groups/Pilot"`: the providing block's ID and the object's name from its `provides` list.
 
 ## Presets
 
