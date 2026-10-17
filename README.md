@@ -10,6 +10,9 @@ In Jamf Deployer, the Building Blocks library offers this catalog on first visit
 
 | Block | Summary |
 | --- | --- |
+| Device Groups | Pilot (static) plus smart groups for all Macs, laptops, desktops and Apple silicon |
+| Categories | Applications, Enrollment, Maintenance and Security |
+| Extension Attributes | Baseline Marker and Deployment Ring |
 | Enrollment | Computer PreStage for Automated Device Enrollment |
 | FileVault | FileVault with escrowed recovery keys, enforced at login |
 | Software Updates | Declarative update settings via a Jamf Blueprint |
@@ -24,13 +27,17 @@ In Jamf Deployer, the Building Blocks library offers this catalog on first visit
 
 The four settings blocks (check-in, re-enrollment, local admin passwords, Self Service app) set tenant-wide settings. A setting can belong to one block only, and removing such a block keeps the current values in Jamf.
 
-These blocks carry configuration opinions, which is exactly why they live in a catalog: your organization's FileVault or update policy should come from **your** catalog, not from an app. The connector-style blocks that carry no configuration of their own — **Foundation**, **App Catalog**, **Jamf Protect Baseline** and **Security Cloud** — ship inside the app.
+These blocks carry configuration opinions, which is exactly why they live in a catalog: your organization's FileVault or update policy — or its group and category layout — should come from **your** catalog, not from an app. The connector-style blocks that carry no configuration of their own — **App Catalog**, **Jamf Protect Baseline** and **Security Cloud** — ship inside the app.
+
+## How blocks connect
+
+Every block is optional. A block that applies to a group or files objects under a category lets you pick, per tenant, either a group or category that already exists in Jamf, or one created by another selected block. **Device Groups** and **Categories** create the usual ones, and the other blocks here default to them when both are selected — FileVault to Pilot and Security, Rosetta 2 to Apple Silicon Macs and Applications. In a block's `block.json`, a default reads `"device-groups/Pilot"`: the providing block's ID and the object's name from its `provides` list.
 
 ## Presets
 
-- **Standard** — enrollment, FileVault, software updates, CIS Level 1 (monitor), Rosetta 2
-- **Minimal** — foundation and software updates
-- **Complete** — everything above
+- **Minimal** — device groups, categories and software updates
+- **Standard** — device groups, categories, extension attributes, enrollment, FileVault, software updates, CIS Level 1 (monitor), Rosetta 2
+- **Complete** — everything in the catalog
 
 ## Publishing your own catalog
 

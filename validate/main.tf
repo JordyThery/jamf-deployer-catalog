@@ -15,10 +15,22 @@ provider "jamfplatform" {
   impact_alerts = true
 }
 
-module "foundation" {
-  source         = "../../jamf-deployer/Catalog/blocks/foundation"
+module "device_groups" {
+  source         = "../blocks/device-groups"
   name_prefix    = "JD - "
-  managed_by_tag = "Managed by Jamf Deployer · foundation@1.0.0"
+  managed_by_tag = "Managed by Jamf Deployer · device-groups@1.0.0"
+}
+
+module "categories" {
+  source         = "../blocks/categories"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · categories@1.0.0"
+}
+
+module "extension_attributes" {
+  source         = "../blocks/extension-attributes"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · extension-attributes@1.0.0"
 }
 
 module "enrollment" {
@@ -32,30 +44,30 @@ module "filevault" {
   source                  = "../blocks/filevault"
   name_prefix             = "JD - "
   managed_by_tag          = "Managed by Jamf Deployer · filevault@1.0.0"
-  scope_jamf_pro_group_id = module.foundation.pilot_jamf_pro_id
-  category_id             = module.foundation.category_security_id
+  scope_jamf_pro_group_id = module.device_groups.device_group_jamf_pro_ids["Pilot"]
+  category_id             = module.categories.category_ids["Security"]
 }
 
 module "software_updates" {
   source                    = "../blocks/software-updates"
   name_prefix               = "JD - "
   managed_by_tag            = "Managed by Jamf Deployer · software-updates@1.0.0"
-  scope_platform_group_uuid = module.foundation.pilot_platform_uuid
+  scope_platform_group_uuid = module.device_groups.device_group_ids["Pilot"]
 }
 
 module "compliance_cis_l1" {
   source                    = "../blocks/compliance-cis-l1"
   name_prefix               = "JD - "
   managed_by_tag            = "Managed by Jamf Deployer · compliance-cis-l1@1.0.0"
-  scope_platform_group_uuid = module.foundation.pilot_platform_uuid
+  scope_platform_group_uuid = module.device_groups.device_group_ids["Pilot"]
 }
 
 module "rosetta" {
   source                  = "../blocks/rosetta"
   name_prefix             = "JD - "
   managed_by_tag          = "Managed by Jamf Deployer · rosetta@1.0.0"
-  scope_jamf_pro_group_id = module.foundation.apple_silicon_jamf_pro_id
-  category_id             = module.foundation.category_applications_id
+  scope_jamf_pro_group_id = module.device_groups.device_group_jamf_pro_ids["Apple Silicon Macs"]
+  category_id             = module.categories.category_ids["Applications"]
 }
 
 module "checkin_inventory" {
@@ -92,6 +104,6 @@ module "self_service_maintenance" {
   source                  = "../blocks/self-service-maintenance"
   name_prefix             = "JD - "
   managed_by_tag          = "Managed by Jamf Deployer · self-service-maintenance@1.0.0"
-  scope_jamf_pro_group_id = module.foundation.all_macs_jamf_pro_id
-  category_id             = module.foundation.category_maintenance_id
+  scope_jamf_pro_group_id = module.device_groups.device_group_jamf_pro_ids["All Managed Macs"]
+  category_id             = module.categories.category_ids["Maintenance"]
 }
