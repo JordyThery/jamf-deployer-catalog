@@ -10,9 +10,9 @@ resource "jamfplatform_pro_mobile_device_configuration_profile" "passcode" {
     distribution_method = "Install Automatically"
     level               = "Device Level"
     payloads = templatefile("${path.module}/passcode.mobileconfig.tftpl", {
-      name             = local.profile_name
-      minimum_length   = var.minimum_length
-      max_inactivity   = var.max_inactivity_minutes
+      name           = local.profile_name
+      minimum_length = var.minimum_length
+      max_inactivity = var.max_inactivity_minutes
     })
   }
   scope = {

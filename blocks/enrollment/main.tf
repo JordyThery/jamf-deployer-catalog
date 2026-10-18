@@ -23,22 +23,22 @@ resource "jamfplatform_pro_computer_prestage_enrollment" "standard" {
   # Business-standard Setup Assistant: skip the consumer panes, keep the
   # essentials (language, Wi-Fi, FileVault pane stays interactive).
   skip_setup_items = {
-    apple_id                    = true
-    biometric                   = false
-    diagnostics                 = true
-    icloud_diagnostics          = true
-    icloud_storage              = true
-    intelligence                = true
-    location                    = false
-    payment                     = true
-    privacy                     = false
-    registration                = true
-    restore                     = true
-    screen_time                 = true
-    siri                        = true
-    terms_of_address            = true
-    tos                         = false
-    wallpaper                   = true
-    welcome                     = false
+    apple_id           = true
+    biometric          = false
+    diagnostics        = true
+    icloud_diagnostics = true
+    icloud_storage     = true
+    intelligence       = true
+    location           = false
+    payment            = true
+    privacy            = false
+    registration       = true
+    restore            = true
+    screen_time        = true
+    siri               = true
+    terms_of_address   = true
+    tos                = false
+    wallpaper          = true
+    welcome            = false
   }
 }
