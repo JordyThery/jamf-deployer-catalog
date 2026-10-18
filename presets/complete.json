@@ -1,7 +1,7 @@
 {
   "id": "complete",
   "name": "Complete",
-  "summary": "Everything in this catalog: the Standard baseline plus tenant settings, Self Service maintenance and macOS version groups.",
+  "summary": "Everything in this catalog: the Standard baseline plus tenant settings, Self Service maintenance, macOS version groups and the mobile blocks.",
   "blocks": [
     "device-groups",
     "categories",
@@ -16,7 +16,10 @@
     "local-admin-password",
     "self-service-app",
     "self-service-maintenance",
-    "macos-version-groups"
+    "macos-version-groups",
+    "mobile-device-groups",
+    "mobile-passcode",
+    "mobile-enrollment"
   ],
   "defaults": {
     "compliance-cis-l1": {

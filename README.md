@@ -13,6 +13,9 @@ In Jamf Deployer, the Building Blocks library offers this catalog on first visit
 | Device Groups | Pilot (static) plus smart groups for all Macs, laptops, desktops and Apple silicon |
 | Categories | Applications, Enrollment, Maintenance and Security |
 | Extension Attributes | Baseline Marker and Deployment Ring |
+| Mobile Device Groups | Smart groups for supervised iPads and supervised iPhones |
+| Mobile Passcode | A passcode policy for iPads and iPhones |
+| Mobile Enrollment | A mobile PreStage for Automated Device Enrollment |
 | Enrollment | Computer PreStage for Automated Device Enrollment |
 | FileVault | FileVault with escrowed recovery keys, enforced at login |
 | Software Updates | Declarative update settings via a Jamf Blueprint |
@@ -37,6 +40,7 @@ Every block is optional. A block that applies to a group or files objects under 
 
 - **Minimal** — device groups, categories and software updates
 - **Standard** — device groups, categories, extension attributes, enrollment, FileVault, software updates, CIS Level 1 (monitor), Rosetta 2
+- **Mobile** — categories, mobile device groups, a passcode policy and a mobile PreStage
 - **Complete** — everything in the catalog
 
 ## Publishing your own catalog

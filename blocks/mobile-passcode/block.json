@@ -1,0 +1,51 @@
+{
+  "acceptsCategory": true,
+  "alwaysOn": false,
+  "category": "Security",
+  "conflicts": [],
+  "defaultCategory": "categories/Security",
+  "id": "mobile-passcode",
+  "minJamfProVersion": "11.31.0",
+  "name": "Mobile Passcode",
+  "objectsCreated": [
+    "1 mobile device configuration profile (passcode policy)"
+  ],
+  "permissions": [
+    "configuration-profiles:create",
+    "configuration-profiles:read",
+    "configuration-profiles:update",
+    "configuration-profiles:delete"
+  ],
+  "products": [
+    "jamf-pro"
+  ],
+  "requires": [],
+  "risk": "medium",
+  "scope": {
+    "default": "mobile-device-groups/Supervised iPads",
+    "kind": "jamfProMobileGroup",
+    "variable": "scope_jamf_pro_mobile_group_id"
+  },
+  "settings": [
+    {
+      "default": "6",
+      "description": "Number of characters the passcode needs at least.",
+      "key": "minimum_length",
+      "required": true,
+      "section": "Passcode",
+      "title": "Minimum passcode length",
+      "type": "number"
+    },
+    {
+      "default": "5",
+      "description": "Minutes of inactivity before the device locks itself.",
+      "key": "max_inactivity_minutes",
+      "required": true,
+      "section": "Passcode",
+      "title": "Lock after (minutes)",
+      "type": "number"
+    }
+  ],
+  "summary": "Requires a passcode on iPads and iPhones: a minimum length, no simple values, and an automatic lock after inactivity.",
+  "version": "1.0.0"
+}

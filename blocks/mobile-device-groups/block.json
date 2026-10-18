@@ -1,0 +1,39 @@
+{
+  "alwaysOn": false,
+  "category": "Core",
+  "conflicts": [],
+  "id": "mobile-device-groups",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [
+    "Supervised iPads",
+    "Supervised iPhones"
+  ],
+  "name": "Mobile Device Groups",
+  "objectsCreated": [
+    "2 smart mobile device groups (Supervised iPads, Supervised iPhones)"
+  ],
+  "permissions": [
+    "device-groups:create",
+    "device-groups:read",
+    "device-groups:update",
+    "device-groups:delete"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {
+    "device_group": [
+      "Supervised iPads",
+      "Supervised iPhones"
+    ]
+  },
+  "requires": [],
+  "risk": "low",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Smart groups for supervised iPads and supervised iPhones — what the mobile blocks scope to.",
+  "version": "1.0.0"
+}

@@ -107,3 +107,24 @@ module "self_service_maintenance" {
   scope_jamf_pro_group_id = module.device_groups.device_group_jamf_pro_ids["All Managed Macs"]
   category_id             = module.categories.category_ids["Maintenance"]
 }
+
+module "mobile_device_groups" {
+  source         = "../blocks/mobile-device-groups"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · mobile-device-groups@1.0.0"
+}
+
+module "mobile_passcode" {
+  source                         = "../blocks/mobile-passcode"
+  name_prefix                    = "JD - "
+  managed_by_tag                 = "Managed by Jamf Deployer · mobile-passcode@1.0.0"
+  scope_jamf_pro_mobile_group_id = module.mobile_device_groups.device_group_jamf_pro_ids["Supervised iPads"]
+  category_id                    = module.categories.category_ids["Security"]
+}
+
+module "mobile_enrollment" {
+  source            = "../blocks/mobile-enrollment"
+  name_prefix       = "JD - "
+  managed_by_tag    = "Managed by Jamf Deployer · mobile-enrollment@1.0.0"
+  ade_instance_name = "Apple Business Manager"
+}

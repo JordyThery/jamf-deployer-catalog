@@ -1,0 +1,7 @@
+{
+  "id": "mobile",
+  "name": "Mobile",
+  "summary": "A first iPad and iPhone baseline: supervised device groups, a passcode policy and an Automated Device Enrollment PreStage.",
+  "blocks": ["categories", "mobile-device-groups", "mobile-passcode", "mobile-enrollment"],
+  "defaults": {}
+}
