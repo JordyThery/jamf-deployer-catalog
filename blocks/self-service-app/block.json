@@ -1,7 +1,7 @@
 {
   "id": "self-service-app",
   "name": "Self Service App",
-  "summary": "Installs the Self Service app on every Mac and sets how it opens and notifies users.",
+  "summary": "Installs the Self Service app on every Mac and sets how it opens, notifies and asks users to log in.",
   "category": "Tenant Settings",
   "version": "1.1.0",
   "requires": [],
@@ -55,6 +55,40 @@
       "default": "true",
       "description": "Notifies users about new items available in Self Service.",
       "section": "Self Service"
+    },
+    {
+      "key": "login_method",
+      "title": "User login",
+      "type": "enum",
+      "default": "NotRequired",
+      "enumValues": [
+        "NotRequired",
+        "Anonymous",
+        "Required"
+      ],
+      "enumLabels": [
+        "Not required",
+        "Optional",
+        "Required"
+      ],
+      "description": "Whether users log in to Self Service. Optional and Required show items scoped to the user.",
+      "section": "Login"
+    },
+    {
+      "key": "authentication_type",
+      "title": "Authentication",
+      "type": "enum",
+      "default": "Basic",
+      "enumValues": [
+        "Basic",
+        "Saml"
+      ],
+      "enumLabels": [
+        "Directory or Jamf Pro account",
+        "Single Sign-On"
+      ],
+      "description": "How users log in when login is optional or required. Single Sign-On needs Self Service SSO enabled in Jamf Pro's Single Sign-On settings.",
+      "section": "Login"
     }
   ],
   "objectsCreated": [
