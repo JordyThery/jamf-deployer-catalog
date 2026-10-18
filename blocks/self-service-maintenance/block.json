@@ -5,6 +5,16 @@
   "conflicts": [],
   "defaultCategory": "categories/Maintenance",
   "id": "self-service-maintenance",
+  "jamfProPermissions": [
+    "Create Scripts",
+    "Read Scripts",
+    "Update Scripts",
+    "Delete Scripts",
+    "Create Policies",
+    "Read Policies",
+    "Update Policies",
+    "Delete Policies"
+  ],
   "minJamfProVersion": "11.31.0",
   "name": "Self Service Maintenance",
   "objectsCreated": [
@@ -33,5 +43,5 @@
   },
   "settings": [],
   "summary": "Self Service items users can run themselves when support asks: update inventory and flush the DNS cache.",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

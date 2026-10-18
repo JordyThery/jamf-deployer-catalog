@@ -9,9 +9,24 @@
       "fieldPath": "disk_encryption.auth_restart",
       "resourceType": "jamfplatform_pro_policy",
       "settingKey": "auth_restart"
+    },
+    {
+      "fieldPath": "payloads[0].disk_encryption[0].auth_restart",
+      "resourceType": "jamfpro_policy",
+      "settingKey": "auth_restart"
     }
   ],
   "id": "filevault",
+  "jamfProPermissions": [
+    "Create Disk Encryption Configurations",
+    "Read Disk Encryption Configurations",
+    "Update Disk Encryption Configurations",
+    "Delete Disk Encryption Configurations",
+    "Create Policies",
+    "Read Policies",
+    "Update Policies",
+    "Delete Policies"
+  ],
   "minJamfProVersion": "11.31.0",
   "name": "FileVault",
   "objectsCreated": [
@@ -50,5 +65,5 @@
     }
   ],
   "summary": "Turns on FileVault with an individual recovery key escrowed to Jamf Pro, enforced by a login policy on the chosen scope.",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

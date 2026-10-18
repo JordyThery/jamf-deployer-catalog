@@ -3,6 +3,13 @@
   "category": "Enrollment",
   "conflicts": [],
   "id": "mobile-enrollment",
+  "jamfProPermissions": [
+    "Create Mobile Device PreStage Enrollments",
+    "Read Mobile Device PreStage Enrollments",
+    "Update Mobile Device PreStage Enrollments",
+    "Delete Mobile Device PreStage Enrollments",
+    "Read Device Enrollment Program Instances"
+  ],
   "minJamfProVersion": "11.31.0",
   "name": "Mobile Enrollment",
   "objectsCreated": [
@@ -71,5 +78,5 @@
     }
   ],
   "summary": "A mobile PreStage for Automated Device Enrollment: supervised, MDM non-removable, consumer setup panes skipped.",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

@@ -3,6 +3,12 @@
   "category": "Core",
   "conflicts": [],
   "id": "extension-attributes",
+  "jamfProPermissions": [
+    "Create Computer Extension Attributes",
+    "Read Computer Extension Attributes",
+    "Update Computer Extension Attributes",
+    "Delete Computer Extension Attributes"
+  ],
   "minJamfProVersion": "11.31.0",
   "name": "Extension Attributes",
   "objectsCreated": [
@@ -31,5 +37,5 @@
   },
   "settings": [],
   "summary": "A Baseline Marker text attribute and a Deployment Ring pop-up (Pilot or Production) for reporting and targeting.",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

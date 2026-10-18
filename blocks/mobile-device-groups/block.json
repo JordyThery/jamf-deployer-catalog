@@ -3,6 +3,12 @@
   "category": "Core",
   "conflicts": [],
   "id": "mobile-device-groups",
+  "jamfProPermissions": [
+    "Create Smart Mobile Device Groups",
+    "Read Smart Mobile Device Groups",
+    "Update Smart Mobile Device Groups",
+    "Delete Smart Mobile Device Groups"
+  ],
   "minJamfProVersion": "11.31.0",
   "mobileDeviceGroups": [
     "Supervised iPads",
@@ -35,5 +41,5 @@
   },
   "settings": [],
   "summary": "Smart groups for supervised iPads and supervised iPhones — what the mobile blocks scope to.",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

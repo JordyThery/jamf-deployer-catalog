@@ -3,21 +3,51 @@
   "name": "macOS Version Groups",
   "summary": "Smart groups for Macs on the current major macOS and Macs below your supported minimum — ready for scoping updates and reports.",
   "category": "Groups",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "requires": [],
   "conflicts": [],
-  "products": ["jamf-pro", "jamf-platform"],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
   "minJamfProVersion": "11.31.0",
-  "permissions": ["device-groups:create", "device-groups:read", "device-groups:update", "device-groups:delete"],
+  "permissions": [
+    "device-groups:create",
+    "device-groups:read",
+    "device-groups:update",
+    "device-groups:delete"
+  ],
   "risk": "low",
   "alwaysOn": false,
-  "scope": { "kind": "none" },
+  "scope": {
+    "kind": "none"
+  },
   "settings": [
-    { "key": "current_major_version", "title": "Current macOS major version", "type": "string", "default": "26",
-      "description": "Macs on this major version or later land in the \"current macOS\" group.", "section": "Versions" },
-    { "key": "minimum_major_version", "title": "Minimum supported major version", "type": "string", "default": "15",
-      "description": "Macs below this major version land in the \"below minimum\" group.", "section": "Versions" }
+    {
+      "key": "current_major_version",
+      "title": "Current macOS major version",
+      "type": "string",
+      "default": "26",
+      "description": "Macs on this major version or later land in the \"current macOS\" group.",
+      "section": "Versions"
+    },
+    {
+      "key": "minimum_major_version",
+      "title": "Minimum supported major version",
+      "type": "string",
+      "default": "15",
+      "description": "Macs below this major version land in the \"below minimum\" group.",
+      "section": "Versions"
+    }
   ],
-  "objectsCreated": ["2 smart computer groups"],
-  "acceptsCategory": false
+  "objectsCreated": [
+    "2 smart computer groups"
+  ],
+  "acceptsCategory": false,
+  "jamfProPermissions": [
+    "Create Smart Computer Groups",
+    "Read Smart Computer Groups",
+    "Update Smart Computer Groups",
+    "Delete Smart Computer Groups"
+  ]
 }

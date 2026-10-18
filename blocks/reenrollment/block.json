@@ -3,27 +3,74 @@
   "name": "Re-enrollment",
   "summary": "What Jamf Pro clears when a Mac enrolls again, so reused or reinstalled Macs start with a clean record.",
   "category": "Tenant Settings",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "requires": [],
   "conflicts": [],
-  "products": ["jamf-pro"],
+  "products": [
+    "jamf-pro"
+  ],
   "minJamfProVersion": "11.31.0",
-  "permissions": ["re-enrollment:read", "re-enrollment:update"],
+  "permissions": [
+    "re-enrollment:read",
+    "re-enrollment:update"
+  ],
   "risk": "low",
   "alwaysOn": false,
-  "scope": { "kind": "none" },
+  "scope": {
+    "kind": "none"
+  },
   "settings": [
-    { "key": "clear_management_history", "title": "Clear management history", "type": "enum", "default": "DELETE_EVERYTHING_EXCEPT_ACKNOWLEDGED",
-      "enumValues": ["DELETE_NOTHING", "DELETE_ERRORS", "DELETE_EVERYTHING_EXCEPT_ACKNOWLEDGED", "DELETE_EVERYTHING"],
-      "enumLabels": ["Nothing", "Failed commands", "Pending and failed commands", "All commands"],
-      "description": "Which MDM command history is removed on re-enrollment.", "section": "Re-enrollment" },
-    { "key": "clear_policy_logs", "title": "Clear policy logs", "type": "bool", "default": "true",
-      "description": "Removes policy logs so once-per-computer policies run again.", "section": "Re-enrollment" },
-    { "key": "clear_extension_attributes", "title": "Clear extension attribute values", "type": "bool", "default": "true",
-      "description": "Removes values reported by extension attributes; the next inventory reports them fresh.", "section": "Re-enrollment" },
-    { "key": "clear_location_information", "title": "Clear user and location", "type": "bool", "default": "true",
-      "description": "Removes the assigned user, location and its history.", "section": "Re-enrollment" }
+    {
+      "key": "clear_management_history",
+      "title": "Clear management history",
+      "type": "enum",
+      "default": "DELETE_EVERYTHING_EXCEPT_ACKNOWLEDGED",
+      "enumValues": [
+        "DELETE_NOTHING",
+        "DELETE_ERRORS",
+        "DELETE_EVERYTHING_EXCEPT_ACKNOWLEDGED",
+        "DELETE_EVERYTHING"
+      ],
+      "enumLabels": [
+        "Nothing",
+        "Failed commands",
+        "Pending and failed commands",
+        "All commands"
+      ],
+      "description": "Which MDM command history is removed on re-enrollment.",
+      "section": "Re-enrollment"
+    },
+    {
+      "key": "clear_policy_logs",
+      "title": "Clear policy logs",
+      "type": "bool",
+      "default": "true",
+      "description": "Removes policy logs so once-per-computer policies run again.",
+      "section": "Re-enrollment"
+    },
+    {
+      "key": "clear_extension_attributes",
+      "title": "Clear extension attribute values",
+      "type": "bool",
+      "default": "true",
+      "description": "Removes values reported by extension attributes; the next inventory reports them fresh.",
+      "section": "Re-enrollment"
+    },
+    {
+      "key": "clear_location_information",
+      "title": "Clear user and location",
+      "type": "bool",
+      "default": "true",
+      "description": "Removes the assigned user, location and its history.",
+      "section": "Re-enrollment"
+    }
   ],
-  "objectsCreated": ["Re-enrollment settings"],
-  "acceptsCategory": false
+  "objectsCreated": [
+    "Re-enrollment settings"
+  ],
+  "acceptsCategory": false,
+  "jamfProPermissions": [
+    "Read Re-enrollment",
+    "Update Re-enrollment"
+  ]
 }

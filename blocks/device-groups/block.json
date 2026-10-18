@@ -3,6 +3,16 @@
   "category": "Core",
   "conflicts": [],
   "id": "device-groups",
+  "jamfProPermissions": [
+    "Create Static Computer Groups",
+    "Read Static Computer Groups",
+    "Update Static Computer Groups",
+    "Delete Static Computer Groups",
+    "Create Smart Computer Groups",
+    "Read Smart Computer Groups",
+    "Update Smart Computer Groups",
+    "Delete Smart Computer Groups"
+  ],
   "minJamfProVersion": "11.31.0",
   "name": "Device Groups",
   "objectsCreated": [
@@ -34,6 +44,6 @@
     "kind": "none"
   },
   "settings": [],
-  "summary": "A static Pilot group and smart groups for all Macs, laptops, desktops and Apple silicon \u2014 the groups other blocks scope to.",
-  "version": "1.0.0"
+  "summary": "A static Pilot group and smart groups for all Macs, laptops, desktops and Apple silicon — the groups other blocks scope to.",
+  "version": "1.1.0"
 }

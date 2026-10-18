@@ -22,9 +22,36 @@
       "fieldPath": "default_prestage",
       "resourceType": "jamfplatform_pro_computer_prestage_enrollment",
       "settingKey": "default_prestage"
+    },
+    {
+      "fieldPath": "support_email_address",
+      "resourceType": "jamfpro_computer_prestage_enrollment",
+      "settingKey": "support_email"
+    },
+    {
+      "fieldPath": "support_phone_number",
+      "resourceType": "jamfpro_computer_prestage_enrollment",
+      "settingKey": "support_phone"
+    },
+    {
+      "fieldPath": "auto_advance_setup",
+      "resourceType": "jamfpro_computer_prestage_enrollment",
+      "settingKey": "auto_advance_setup"
+    },
+    {
+      "fieldPath": "default_prestage",
+      "resourceType": "jamfpro_computer_prestage_enrollment",
+      "settingKey": "default_prestage"
     }
   ],
   "id": "enrollment",
+  "jamfProPermissions": [
+    "Create Computer PreStage Enrollments",
+    "Read Computer PreStage Enrollments",
+    "Update Computer PreStage Enrollments",
+    "Delete Computer PreStage Enrollments",
+    "Read Device Enrollment Program Instances"
+  ],
   "minJamfProVersion": "11.31.0",
   "name": "Enrollment",
   "objectsCreated": [
@@ -48,7 +75,7 @@
   "settings": [
     {
       "default": "",
-      "description": "The exact name of the ADE instance in Jamf Pro (Settings \u2192 Device Enrollment). Usually \u201cApple Business Manager\u201d.",
+      "description": "The exact name of the ADE instance in Jamf Pro (Settings → Device Enrollment). Usually “Apple Business Manager”.",
       "key": "ade_instance_name",
       "required": true,
       "section": "Apple Business Manager",
@@ -102,5 +129,5 @@
     }
   ],
   "summary": "A computer PreStage for Automated Device Enrollment: supervised, MDM non-removable, consumer setup panes skipped.",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
