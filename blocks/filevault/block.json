@@ -65,5 +65,5 @@
     }
   ],
   "summary": "Turns on FileVault with an individual recovery key escrowed to Jamf Pro, enforced by a login policy on the chosen scope.",
-  "version": "1.1.0"
+  "version": "1.0.0"
 }

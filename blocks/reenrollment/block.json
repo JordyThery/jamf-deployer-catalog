@@ -3,7 +3,7 @@
   "name": "Re-enrollment",
   "summary": "What Jamf Pro clears when a Mac enrolls again, so reused or reinstalled Macs start with a clean record.",
   "category": "Tenant Settings",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "requires": [],
   "conflicts": [],
   "products": [

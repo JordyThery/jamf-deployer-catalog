@@ -3,7 +3,7 @@
   "name": "Check-in & Inventory",
   "summary": "How often Macs check in, whether startup and login run policies, and what inventory each Mac reports.",
   "category": "Tenant Settings",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "requires": [],
   "conflicts": [],
   "products": [

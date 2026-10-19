@@ -43,5 +43,5 @@
   },
   "settings": [],
   "summary": "Self Service items users can run themselves when support asks: update inventory and flush the DNS cache.",
-  "version": "1.1.0"
+  "version": "1.0.0"
 }

@@ -28,7 +28,7 @@ In Jamf Deployer, the Building Blocks library offers this catalog on first visit
 | Self Service Maintenance | "Update inventory" and "Flush DNS cache" Self Service items |
 | macOS Version Groups | Smart groups for Macs on current macOS and Macs below your minimum |
 
-Every block deploys through the Jamf Platform API, and every block except Software Updates and Compliance — CIS Level 1 also deploys to tenants connected through the Jamf Pro API: its `jamfpro/` folder holds a version written for the community [jamfpro](https://github.com/deploymenttheory/terraform-provider-jamfpro) plugin, with the same settings. Requires Jamf Deployer 1.0.4 or later.
+Every block deploys through the Jamf Platform API, and every block except Software Updates and Compliance — CIS Level 1 also deploys to tenants connected through the Jamf Pro API: its `jamfpro/` folder holds a version written for the community [jamfpro](https://github.com/deploymenttheory/terraform-provider-jamfpro) plugin, with the same settings.
 
 The four settings blocks (check-in, re-enrollment, local admin passwords, Self Service app) set tenant-wide settings. A setting can belong to one block only, and removing such a block keeps the current values in Jamf.
 

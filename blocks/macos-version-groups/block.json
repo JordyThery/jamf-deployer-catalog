@@ -3,7 +3,7 @@
   "name": "macOS Version Groups",
   "summary": "Smart groups for Macs on the current major macOS and Macs below your supported minimum — ready for scoping updates and reports.",
   "category": "Groups",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "requires": [],
   "conflicts": [],
   "products": [

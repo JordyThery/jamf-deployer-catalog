@@ -3,7 +3,7 @@
   "name": "Self Service App",
   "summary": "Installs the Self Service app on every Mac and sets how it opens, notifies and asks users to log in.",
   "category": "Tenant Settings",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "requires": [],
   "conflicts": [],
   "products": [
