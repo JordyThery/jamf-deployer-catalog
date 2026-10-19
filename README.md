@@ -32,7 +32,7 @@ Every block deploys through the Jamf Platform API, and every block except Softwa
 
 The four settings blocks (check-in, re-enrollment, local admin passwords, Self Service app) set tenant-wide settings. A setting can belong to one block only, and removing such a block keeps the current values in Jamf.
 
-These blocks carry configuration opinions, which is exactly why they live in a catalog: your organization's FileVault or update policy — or its group and category layout — should come from **your** catalog, not from an app. The connector-style blocks that carry no configuration of their own — **App Catalog**, **Jamf Protect Baseline** and **Security Cloud** — ship inside the app.
+These blocks carry configuration opinions, which is exactly why they live in a catalog: your organization's FileVault or update policy — or its group and category layout — should come from **your** catalog, not from an app. The connector-style blocks that carry no configuration of their own — **App Catalog**, **Mac App Store Apps**, **iPad and iPhone Apps**, **Jamf Protect Baseline** and **Security Cloud** — ship inside the app.
 
 ## How blocks connect
 
