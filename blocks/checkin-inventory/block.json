@@ -84,6 +84,8 @@
     "Read Computer Check-In",
     "Update Computer Check-In",
     "Read Computer Inventory Collection Settings",
-    "Update Computer Inventory Collection Settings"
+    "Update Computer Inventory Collection Settings",
+    "Read Policies",
+    "Update Policies"
   ]
 }
