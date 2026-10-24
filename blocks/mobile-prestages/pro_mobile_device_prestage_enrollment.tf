@@ -25,7 +25,6 @@ resource "jamfplatform_pro_mobile_device_prestage_enrollment" "shared" {
   prevent_activation_lock                      = true
   require_authentication                       = false
   rts_enabled                                  = false
-  scope_serial_numbers                         = []
   send_timezone                                = false
   supervised                                   = true
   temporary_session_only                       = false
@@ -62,7 +61,6 @@ resource "jamfplatform_pro_mobile_device_prestage_enrollment" "one_to_one" {
   prevent_activation_lock                      = true
   require_authentication                       = false
   rts_enabled                                  = false
-  scope_serial_numbers                         = []
   send_timezone                                = false
   supervised                                   = true
   temporary_session_only                       = false
