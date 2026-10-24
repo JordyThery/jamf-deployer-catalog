@@ -5,7 +5,7 @@ resource "jamfplatform_pro_mobile_device_prestage_enrollment" "shared" {
   configure_device_before_setup_assistant      = true
   default_prestage                             = false
   device_enrollment_program_instance_id        = data.jamfplatform_pro_automated_device_enrollment.instance.id
-  display_name                                 = "${var.name_prefix}Shared"
+  display_name                                 = "${var.name_prefix}PreStage - Shared"
   do_not_use_profile_from_backup               = false
   enable_device_based_activation_lock          = false
   enforce_temporary_session_timeout            = true
@@ -25,7 +25,6 @@ resource "jamfplatform_pro_mobile_device_prestage_enrollment" "shared" {
   prevent_activation_lock                      = true
   require_authentication                       = false
   rts_enabled                                  = false
-  scope_serial_numbers                         = []
   send_timezone                                = false
   supervised                                   = true
   temporary_session_only                       = false
@@ -62,7 +61,6 @@ resource "jamfplatform_pro_mobile_device_prestage_enrollment" "one_to_one" {
   prevent_activation_lock                      = true
   require_authentication                       = false
   rts_enabled                                  = false
-  scope_serial_numbers                         = []
   send_timezone                                = false
   supervised                                   = true
   temporary_session_only                       = false

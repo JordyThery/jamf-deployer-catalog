@@ -24,7 +24,6 @@ resource "jamfplatform_pro_computer_prestage_enrollment" "one_to_one" {
   recovery_lock_password_type             = "MANUAL"
   require_authentication                  = false
   rotate_recovery_lock_password           = false
-  scope_serial_numbers                    = []
 }
 
 resource "jamfplatform_pro_computer_prestage_enrollment" "shared" {
@@ -53,5 +52,4 @@ resource "jamfplatform_pro_computer_prestage_enrollment" "shared" {
   recovery_lock_password_type             = "MANUAL"
   require_authentication                  = false
   rotate_recovery_lock_password           = false
-  scope_serial_numbers                    = []
 }
