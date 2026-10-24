@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>PayloadDisplayName</key>
+				<string>Restrictions Payload</string>
+				<key>PayloadIdentifier</key>
+				<string>1B964872-A322-48DA-85C8-DB15151C09B6</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.applicationaccess</string>
+				<key>PayloadUUID</key>
+				<string>1B964872-A322-48DA-85C8-DB15151C09B6</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>enforcedSoftwareUpdateDelay</key>
+				<integer>14</integer>
+				<key>forceDelayedSoftwareUpdates</key>
+				<true/>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string/>
+		<key>PayloadDisplayName</key>
+		<string>Software Update Deferral</string>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadIdentifier</key>
+		<string>8BF4C8DA-036A-4C72-90E5-D05F4616C4DB</string>
+		<key>PayloadOrganization</key>
+		<string>JAMF Software</string>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>8BF4C8DA-036A-4C72-90E5-D05F4616C4DB</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

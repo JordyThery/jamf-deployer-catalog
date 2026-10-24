@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>Applications</key>
+				<array>
+				</array>
+				<key>BlockAllIncoming</key>
+				<false/>
+				<key>EnableFirewall</key>
+				<true/>
+				<key>EnableStealthMode</key>
+				<true/>
+				<key>PayloadDisplayName</key>
+				<string>Firewall</string>
+				<key>PayloadIdentifier</key>
+				<string>7BACEC7B-3A01-452B-B9A5-0BAC74B16D69</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.security.firewall</string>
+				<key>PayloadUUID</key>
+				<string>7BACEC7B-3A01-452B-B9A5-0BAC74B16D69</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>PayloadDisplayName</key>
+				<string>PreferenceSecurity</string>
+				<key>PayloadIdentifier</key>
+				<string>627B2854-5551-43C2-A502-C2C7539BBF10</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.preference.security</string>
+				<key>PayloadUUID</key>
+				<string>627B2854-5551-43C2-A502-C2C7539BBF10</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>dontAllowFireWallUI</key>
+				<true/>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string/>
+		<key>PayloadDisplayName</key>
+		<string>Security and Privacy - Enable Firewall</string>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadIdentifier</key>
+		<string>c9c432a0-5310-41cb-87dd-8907c389165f</string>
+		<key>PayloadOrganization</key>
+		<string>JAMF Software</string>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>c9c432a0-5310-41cb-87dd-8907c389165f</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

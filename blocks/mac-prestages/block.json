@@ -1,0 +1,44 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Enrollment",
+  "conflicts": [],
+  "id": "mac-prestages",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "Mac PreStages",
+  "needs": {},
+  "objectsCreated": [
+    "2 computer PreStages"
+  ],
+  "permissions": [
+    "device-enrollment-program-instances:read",
+    "prestage-enrollments:create",
+    "prestage-enrollments:delete",
+    "prestage-enrollments:read",
+    "prestage-enrollments:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {},
+  "requires": [],
+  "risk": "medium",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [
+    {
+      "default": "",
+      "description": "Name of this tenant's Automated Device Enrollment instance. PreStage enrollments attach to it, so the tenant needs its ADE token uploaded first.",
+      "key": "ade_instance_name",
+      "required": true,
+      "section": "Enrollment",
+      "title": "Automated Device Enrollment instance",
+      "type": "string"
+    }
+  ],
+  "summary": "Two computer PreStages for Automated Device Enrollment, one for one-to-one Macs and one for shared Macs.",
+  "version": "1.0.0"
+}

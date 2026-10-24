@@ -1,0 +1,54 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Configuration",
+  "conflicts": [],
+  "id": "mac-preferences",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "Mac Preferences and Privacy",
+  "needs": {
+    "category": [
+      "Global",
+      "Managed Login Items",
+      "PPPC"
+    ],
+    "device_group": [
+      "Administrator Rights - Assigned",
+      "All 1:1",
+      "All Desktops",
+      "All Laptops",
+      "All Managed",
+      "Excluded",
+      "UAMDM",
+      "UAMDM - 13.0+"
+    ]
+  },
+  "objectsCreated": [
+    "1 privilege elevation configuration",
+    "8 configuration profiles"
+  ],
+  "permissions": [
+    "configuration-profiles:create",
+    "configuration-profiles:delete",
+    "configuration-profiles:read",
+    "configuration-profiles:update",
+    "jamf-connect-deployments:create",
+    "jamf-connect-deployments:delete",
+    "jamf-connect-deployments:read",
+    "jamf-connect-deployments:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {},
+  "requires": [],
+  "risk": "medium",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Finder and Energy Saver settings, managed login items, privacy approvals for Self Service+ and administrator privilege elevation.",
+  "version": "1.0.0"
+}

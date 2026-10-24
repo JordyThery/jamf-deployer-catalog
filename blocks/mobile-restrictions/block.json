@@ -1,0 +1,47 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Security",
+  "conflicts": [
+    "mobile-passcode"
+  ],
+  "id": "mobile-restrictions",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "iPad and iPhone Restrictions",
+  "needs": {
+    "category": [
+      "Global"
+    ],
+    "device_group": [
+      "All 1:1 (mobile)",
+      "All Managed (mobile)",
+      "All Shared (mobile)",
+      "All Unsupervised (mobile)",
+      "Excluded (mobile)",
+      "Restrictions - Unassigned (mobile)"
+    ]
+  },
+  "objectsCreated": [
+    "7 mobile device configuration profiles"
+  ],
+  "permissions": [
+    "configuration-profiles:create",
+    "configuration-profiles:delete",
+    "configuration-profiles:read",
+    "configuration-profiles:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {},
+  "requires": [],
+  "risk": "high",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Baseline, shared-device and CIS Level 1 restrictions, lock screen messages, a passcode policy and software update deferral for iPads and iPhones.",
+  "version": "1.0.0"
+}

@@ -1,0 +1,48 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Security",
+  "conflicts": [
+    "filevault"
+  ],
+  "id": "mac-security",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "Mac Security",
+  "needs": {
+    "category": [
+      "Global"
+    ],
+    "device_group": [
+      "All 1:1",
+      "All Managed",
+      "All Shared",
+      "Excluded",
+      "PreStage Is Assigned",
+      "PreStage Is Assigned - Shared",
+      "Restrictions - Unassigned"
+    ]
+  },
+  "objectsCreated": [
+    "9 configuration profiles"
+  ],
+  "permissions": [
+    "configuration-profiles:create",
+    "configuration-profiles:delete",
+    "configuration-profiles:read",
+    "configuration-profiles:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {},
+  "requires": [],
+  "risk": "high",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Firewall, screen lock, restrictions, login window and profile-based FileVault for one-to-one and shared Macs.",
+  "version": "1.0.0"
+}

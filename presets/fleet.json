@@ -1,0 +1,21 @@
+{
+  "id": "fleet",
+  "name": "Fleet",
+  "summary": "The fleet blocks: one-to-one and shared Macs, iPads and iPhones, from enrollment and first run to security, apps, maintenance and saved searches.",
+  "blocks": [
+    "fleet-foundation",
+    "mac-provisioning",
+    "mac-prestages",
+    "mac-security",
+    "filevault-key-management",
+    "mac-preferences",
+    "mac-update-profiles",
+    "microsoft-apps",
+    "common-apps",
+    "mac-maintenance",
+    "mobile-restrictions",
+    "mobile-prestages",
+    "saved-searches"
+  ],
+  "defaults": {}
+}

@@ -1,7 +1,7 @@
 {
   "id": "complete",
   "name": "Complete",
-  "summary": "Everything in this catalog: the Standard baseline plus tenant settings, Self Service maintenance, macOS version groups and the mobile blocks.",
+  "summary": "Every block except the fleet set: the Standard baseline plus tenant settings, Self Service maintenance, macOS version groups and the mobile blocks.",
   "blocks": [
     "device-groups",
     "categories",

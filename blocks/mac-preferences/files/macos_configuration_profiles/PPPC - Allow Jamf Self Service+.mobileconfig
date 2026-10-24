@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>PayloadDescription</key>
+				<string/>
+				<key>PayloadDisplayName</key>
+				<string>PRIVACY_PREFERENCES_POLICY_CONTROL</string>
+				<key>PayloadEnabled</key>
+				<true/>
+				<key>PayloadIdentifier</key>
+				<string>3172AF59-5DBA-400A-BB7D-8CCA877BCF26</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.TCC.configuration-profile-policy</string>
+				<key>PayloadUUID</key>
+				<string>3172AF59-5DBA-400A-BB7D-8CCA877BCF26</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>Services</key>
+				<dict>
+					<key>SystemPolicyNetworkVolumes</key>
+					<array>
+						<dict>
+							<key>Allowed</key>
+							<true/>
+							<key>CodeRequirement</key>
+							<string>anchor apple generic and identifier &#34;com.jamf.selfserviceplus&#34; and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = &#34;483DWKW443&#34;)</string>
+							<key>Identifier</key>
+							<string>com.jamf.selfserviceplus</string>
+							<key>IdentifierType</key>
+							<string>bundleID</string>
+							<key>StaticCode</key>
+							<false/>
+						</dict>
+						<dict>
+							<key>Allowed</key>
+							<true/>
+							<key>CodeRequirement</key>
+							<string>anchor apple generic and identifier &#34;com.jamf.selfserviceplus.agent&#34; and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = &#34;483DWKW443&#34;)</string>
+							<key>Identifier</key>
+							<string>com.jamf.selfserviceplus.agent</string>
+							<key>IdentifierType</key>
+							<string>bundleID</string>
+							<key>StaticCode</key>
+							<false/>
+						</dict>
+					</array>
+				</dict>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string/>
+		<key>PayloadDisplayName</key>
+		<string>PPPC - Allow Jamf Self Service+</string>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadIdentifier</key>
+		<string>eaf85d14-30c4-4171-a1dd-08329503aeb9</string>
+		<key>PayloadOrganization</key>
+		<string>JAMF Software</string>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>eaf85d14-30c4-4171-a1dd-08329503aeb9</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>
