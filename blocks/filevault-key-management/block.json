@@ -1,0 +1,51 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Security",
+  "conflicts": [],
+  "id": "filevault-key-management",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "FileVault Key Management",
+  "needs": {
+    "category": [
+      "Global"
+    ],
+    "device_group": [
+      "Excluded",
+      "FileVault Key Invalid or Unknown",
+      "FileVault Key Valid"
+    ]
+  },
+  "objectsCreated": [
+    "3 policies",
+    "1 script"
+  ],
+  "permissions": [
+    "policies:create",
+    "policies:delete",
+    "policies:read",
+    "policies:update",
+    "scripts:create",
+    "scripts:delete",
+    "scripts:read",
+    "scripts:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {
+    "script": [
+      "ReissueFileVaultKey.sh"
+    ]
+  },
+  "requires": [],
+  "risk": "medium",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Reissues invalid FileVault recovery keys at login and from Self Service, and rotates keys monthly.",
+  "version": "1.0.0"
+}

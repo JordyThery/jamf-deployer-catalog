@@ -1,0 +1,43 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Updates",
+  "conflicts": [
+    "software-updates"
+  ],
+  "id": "mac-update-profiles",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "macOS Update Profiles",
+  "needs": {
+    "category": [
+      "Global"
+    ],
+    "device_group": [
+      "All Managed",
+      "Excluded"
+    ]
+  },
+  "objectsCreated": [
+    "2 configuration profiles"
+  ],
+  "permissions": [
+    "configuration-profiles:create",
+    "configuration-profiles:delete",
+    "configuration-profiles:read",
+    "configuration-profiles:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {},
+  "requires": [],
+  "risk": "medium",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Profile-based software update settings and deferrals, for tenants that do not use declarative updates.",
+  "version": "1.0.0"
+}

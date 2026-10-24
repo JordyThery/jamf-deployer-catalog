@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>PayloadDisplayName</key>
+				<string>Passcode Payload</string>
+				<key>PayloadIdentifier</key>
+				<string>3D34E991-3C93-4E9F-9084-A01B7380C7E2</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.mobiledevice.passwordpolicy</string>
+				<key>PayloadUUID</key>
+				<string>3D34E991-3C93-4E9F-9084-A01B7380C7E2</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>forcePIN</key>
+				<true/>
+				<key>maxFailedAttempts</key>
+				<integer>11</integer>
+				<key>maxGracePeriod</key>
+				<integer>0</integer>
+				<key>maxInactivity</key>
+				<integer>1</integer>
+				<key>minLength</key>
+				<integer>6</integer>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string/>
+		<key>PayloadDisplayName</key>
+		<string>Passcode - 1:1</string>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadIdentifier</key>
+		<string>FAFE094F-1FA9-4FE3-8FB7-ACEDF5405AAF</string>
+		<key>PayloadOrganization</key>
+		<string>JAMF Software</string>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>FAFE094F-1FA9-4FE3-8FB7-ACEDF5405AAF</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

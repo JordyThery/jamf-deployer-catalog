@@ -1,0 +1,50 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Maintenance",
+  "conflicts": [],
+  "id": "mac-maintenance",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "Mac Maintenance",
+  "needs": {
+    "category": [
+      "Global"
+    ],
+    "device_group": [
+      "All Managed",
+      "Excluded"
+    ]
+  },
+  "objectsCreated": [
+    "4 policies",
+    "1 script"
+  ],
+  "permissions": [
+    "policies:create",
+    "policies:delete",
+    "policies:read",
+    "policies:update",
+    "scripts:create",
+    "scripts:delete",
+    "scripts:read",
+    "scripts:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {
+    "script": [
+      "CollectLogs.sh"
+    ]
+  },
+  "requires": [],
+  "risk": "low",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Inventory at startup and weekly, plus Self Service items to submit inventory and collect logs for support.",
+  "version": "1.0.0"
+}

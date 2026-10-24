@@ -128,3 +128,130 @@ module "mobile_enrollment" {
   managed_by_tag    = "Managed by Jamf Deployer · mobile-enrollment@1.0.0"
   ade_instance_name = "Apple Business Manager"
 }
+
+module "fleet_foundation" {
+  source         = "../blocks/fleet-foundation"
+  name_prefix    = "JD - "
+  managed_by_tag = "Managed by Jamf Deployer · fleet-foundation@1.0.0"
+}
+
+module "mac_provisioning" {
+  source                        = "../blocks/mac-provisioning"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · mac-provisioning@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "mac_security" {
+  source                        = "../blocks/mac-security"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · mac-security@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "filevault_key_management" {
+  source                        = "../blocks/filevault-key-management"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · filevault-key-management@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "mac_preferences" {
+  source                        = "../blocks/mac-preferences"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · mac-preferences@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "mac_update_profiles" {
+  source                        = "../blocks/mac-update-profiles"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · mac-update-profiles@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "microsoft_apps" {
+  source                        = "../blocks/microsoft-apps"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · microsoft-apps@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "common_apps" {
+  source                        = "../blocks/common-apps"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · common-apps@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "mac_maintenance" {
+  source                        = "../blocks/mac-maintenance"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · mac-maintenance@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "mobile_restrictions" {
+  source                        = "../blocks/mobile-restrictions"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · mobile-restrictions@1.0.0"
+  dep_category_ids              = module.fleet_foundation.category_ids
+  dep_category_names            = module.fleet_foundation.category_names
+  dep_device_group_ids          = module.fleet_foundation.device_group_ids
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_device_group_jamf_pro_ids = module.fleet_foundation.device_group_jamf_pro_ids
+}
+
+module "mac_prestages" {
+  source            = "../blocks/mac-prestages"
+  name_prefix       = "JD - "
+  managed_by_tag    = "Managed by Jamf Deployer · mac-prestages@1.0.0"
+  ade_instance_name = "Apple Business Manager"
+}
+
+module "mobile_prestages" {
+  source            = "../blocks/mobile-prestages"
+  name_prefix       = "JD - "
+  managed_by_tag    = "Managed by Jamf Deployer · mobile-prestages@1.0.0"
+  ade_instance_name = "Apple Business Manager"
+}
+
+module "saved_searches" {
+  source                        = "../blocks/saved-searches"
+  name_prefix                   = "JD - "
+  managed_by_tag                = "Managed by Jamf Deployer · saved-searches@1.0.0"
+  dep_device_group_names        = module.fleet_foundation.device_group_names
+  dep_extension_attribute_names = module.fleet_foundation.extension_attribute_names
+}

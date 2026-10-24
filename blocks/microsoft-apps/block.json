@@ -1,0 +1,52 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Applications",
+  "conflicts": [],
+  "id": "microsoft-apps",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "Microsoft Apps",
+  "needs": {
+    "category": [
+      "Applications",
+      "Global"
+    ],
+    "device_group": [
+      "All Managed",
+      "Excluded"
+    ]
+  },
+  "objectsCreated": [
+    "9 App Installers",
+    "1 configuration profile",
+    "2 restricted software records"
+  ],
+  "permissions": [
+    "applications:create",
+    "applications:delete",
+    "applications:read",
+    "applications:update",
+    "configuration-profiles:create",
+    "configuration-profiles:delete",
+    "configuration-profiles:read",
+    "configuration-profiles:update",
+    "restricted-software:create",
+    "restricted-software:delete",
+    "restricted-software:read",
+    "restricted-software:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {},
+  "requires": [],
+  "risk": "medium",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Microsoft 365 apps, Edge, OneDrive, Teams and Windows App from the App Catalog, with Microsoft AutoUpdate turned off so the App Catalog keeps them current.",
+  "version": "1.0.0"
+}

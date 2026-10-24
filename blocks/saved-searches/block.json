@@ -1,0 +1,48 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Reporting",
+  "conflicts": [],
+  "id": "saved-searches",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "Saved Searches",
+  "needs": {
+    "device_group": [
+      "Administrator Rights - Assigned",
+      "All 1:1",
+      "All 1:1 (mobile)",
+      "All Managed",
+      "All Managed (mobile)",
+      "All Shared",
+      "All Shared (mobile)",
+      "Restrictions - Unassigned (mobile)"
+    ],
+    "extension_attribute": [
+      "Notes"
+    ]
+  },
+  "objectsCreated": [
+    "6 advanced computer searches",
+    "5 advanced mobile device searches"
+  ],
+  "permissions": [
+    "advanced-device-searches:create",
+    "advanced-device-searches:delete",
+    "advanced-device-searches:read",
+    "advanced-device-searches:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {},
+  "requires": [],
+  "risk": "low",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Advanced computer and mobile device searches for the fleet groups.",
+  "version": "1.0.0"
+}

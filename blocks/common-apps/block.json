@@ -1,0 +1,40 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Applications",
+  "conflicts": [],
+  "id": "common-apps",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "Common Apps",
+  "needs": {
+    "category": [
+      "Applications"
+    ],
+    "device_group": [
+      "All Managed"
+    ]
+  },
+  "objectsCreated": [
+    "5 App Installers"
+  ],
+  "permissions": [
+    "applications:create",
+    "applications:delete",
+    "applications:read",
+    "applications:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {},
+  "requires": [],
+  "risk": "medium",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "Google Chrome, Zoom, Webex, Adobe Acrobat Reader and Creative Cloud from the App Catalog, installed and kept current automatically.",
+  "version": "1.0.0"
+}

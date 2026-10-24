@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>PayloadDisplayName</key>
+				<string>MCX</string>
+				<key>PayloadIdentifier</key>
+				<string>A8DD9F5C-BA6A-42F8-833B-64FEF2B29C28</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.MCX</string>
+				<key>PayloadUUID</key>
+				<string>A8DD9F5C-BA6A-42F8-833B-64FEF2B29C28</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>dontAllowFDEEnable</key>
+				<true/>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string/>
+		<key>PayloadDisplayName</key>
+		<string>Security and Privacy - FileVault - Shared</string>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadIdentifier</key>
+		<string>59777aae-7e0c-4f09-b12e-7f0b19db4f46</string>
+		<key>PayloadOrganization</key>
+		<string>JAMF Software</string>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>59777aae-7e0c-4f09-b12e-7f0b19db4f46</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

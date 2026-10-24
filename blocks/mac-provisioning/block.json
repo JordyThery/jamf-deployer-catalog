@@ -1,0 +1,57 @@
+{
+  "acceptsCategory": false,
+  "alwaysOn": false,
+  "category": "Enrollment",
+  "conflicts": [],
+  "id": "mac-provisioning",
+  "minJamfProVersion": "11.31.0",
+  "mobileDeviceGroups": [],
+  "name": "Mac Provisioning",
+  "needs": {
+    "category": [
+      "Global",
+      "Provisioning"
+    ],
+    "device_group": [
+      "Classification Is Assigned",
+      "Excluded",
+      "First Run Not Complete",
+      "PreStage Not Assigned"
+    ]
+  },
+  "objectsCreated": [
+    "4 policies",
+    "5 scripts"
+  ],
+  "permissions": [
+    "policies:create",
+    "policies:delete",
+    "policies:read",
+    "policies:update",
+    "scripts:create",
+    "scripts:delete",
+    "scripts:read",
+    "scripts:update"
+  ],
+  "products": [
+    "jamf-pro",
+    "jamf-platform"
+  ],
+  "provides": {
+    "script": [
+      "DeleteAppleApps.sh",
+      "FirstRunComplete.sh",
+      "InstallRosetta.sh",
+      "PromptForClassification.sh",
+      "WaitForProfiles.sh"
+    ]
+  },
+  "requires": [],
+  "risk": "medium",
+  "scope": {
+    "kind": "none"
+  },
+  "settings": [],
+  "summary": "First-run workflow for new Macs: enrollment and first-run policies, waiting for profiles, Rosetta 2, removing unneeded Apple apps, and a Self Service item that asks how a Mac is used.",
+  "version": "1.0.0"
+}

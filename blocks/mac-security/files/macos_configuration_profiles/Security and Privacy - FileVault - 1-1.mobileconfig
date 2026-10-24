@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>Defer</key>
+				<true/>
+				<key>DeferDontAskAtUserLogout</key>
+				<true/>
+				<key>DeferForceAtUserLoginMaxBypassAttempts</key>
+				<integer>0</integer>
+				<key>Enable</key>
+				<string>On</string>
+				<key>PayloadDisplayName</key>
+				<string>FileVault</string>
+				<key>PayloadIdentifier</key>
+				<string>15949FF4-3511-4A04-8D07-640476B67E3B</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.MCX.FileVault2</string>
+				<key>PayloadUUID</key>
+				<string>15949FF4-3511-4A04-8D07-640476B67E3B</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>ShowRecoveryKey</key>
+				<false/>
+				<key>UseRecoveryKey</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>PayloadDisplayName</key>
+				<string>MCX</string>
+				<key>PayloadIdentifier</key>
+				<string>2B6EDDF9-4453-4A96-87A4-830029438B36</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.MCX</string>
+				<key>PayloadUUID</key>
+				<string>2B6EDDF9-4453-4A96-87A4-830029438B36</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>dontAllowFDEDisable</key>
+				<true/>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string/>
+		<key>PayloadDisplayName</key>
+		<string>Security and Privacy - FileVault - 1:1</string>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadIdentifier</key>
+		<string>2926140d-6994-41f3-9683-79f01e9dc568</string>
+		<key>PayloadOrganization</key>
+		<string>JAMF Software</string>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>2926140d-6994-41f3-9683-79f01e9dc568</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

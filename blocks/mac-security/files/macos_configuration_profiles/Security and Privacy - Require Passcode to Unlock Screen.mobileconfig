@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>PayloadDisplayName</key>
+				<string>ScreenSaver</string>
+				<key>PayloadIdentifier</key>
+				<string>84A0D993-A9EF-4382-807E-6D59E65EE0A1</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.screensaver</string>
+				<key>PayloadUUID</key>
+				<string>84A0D993-A9EF-4382-807E-6D59E65EE0A1</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>askForPassword</key>
+				<true/>
+				<key>askForPasswordDelay</key>
+				<integer>0</integer>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string/>
+		<key>PayloadDisplayName</key>
+		<string>Security and Privacy - Require Passcode to Unlock Screen</string>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadIdentifier</key>
+		<string>e8f2ff87-413e-4c0f-a3a7-86d80ad74d20</string>
+		<key>PayloadOrganization</key>
+		<string>JAMF Software</string>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>e8f2ff87-413e-4c0f-a3a7-86d80ad74d20</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>PayloadDisplayName</key>
+				<string>Managed Login Items</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.servicemanagement.A4FD91F4-DA94-4472-88D3-DD755D0F4DE5</string>
+				<key>PayloadOrganization</key>
+				<string>JAMF Software</string>
+				<key>PayloadType</key>
+				<string>com.apple.servicemanagement</string>
+				<key>PayloadUUID</key>
+				<string>A4FD91F4-DA94-4472-88D3-DD755D0F4DE5</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+				<key>Rules</key>
+				<array>
+					<dict>
+						<key>RuleType</key>
+						<string>LabelPrefix</string>
+						<key>RuleValue</key>
+						<string>com.googlecode.munki.</string>
+					</dict>
+					<dict>
+						<key>RuleType</key>
+						<string>LabelPrefix</string>
+						<key>RuleValue</key>
+						<string>uk.co.dataJAR.</string>
+					</dict>
+					<dict>
+						<key>RuleType</key>
+						<string>LabelPrefix</string>
+						<key>RuleValue</key>
+						<string>com.managed.</string>
+					</dict>
+					<dict>
+						<key>RuleType</key>
+						<string>LabelPrefix</string>
+						<key>RuleValue</key>
+						<string>com.jamf.</string>
+					</dict>
+					<dict>
+						<key>RuleType</key>
+						<string>LabelPrefix</string>
+						<key>RuleValue</key>
+						<string>com.jamfsoftware.</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string/>
+		<key>PayloadDisplayName</key>
+		<string>Managed Login Items - Allow Managed Services</string>
+		<key>PayloadEnabled</key>
+		<true/>
+		<key>PayloadIdentifier</key>
+		<string>3065a64b-0bf4-4860-b262-da6622d65a17</string>
+		<key>PayloadOrganization</key>
+		<string>JAMF Software</string>
+		<key>PayloadRemovalDisallowed</key>
+		<true/>
+		<key>PayloadScope</key>
+		<string>System</string>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>3065a64b-0bf4-4860-b262-da6622d65a17</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>
